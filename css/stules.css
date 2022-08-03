@@ -311,6 +311,188 @@ body {
   height: 18px;
 }
 
+/*-----------------------------------------------------------------------------------------------*/
+.modal-form {
+  width: 528px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
+}
+
+.modal-form-header {
+  font-size: 20px;
+  line-height: calc(23.44 / 20);
+  color: #212121;
+
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.modal-form-field {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14.06 / 12);
+  letter-spacing: 0.01em;
+
+  margin-bottom: 10px;
+}
+
+.modal-form-label {
+  color: #757575;
+}
+
+.modal-form-input {
+  min-width: 448px;
+  margin: 4px 0px 0px 0px;
+  padding: 12px 42px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  font: inherit;
+  outline: none;
+
+  transition: border-color 250ms var(--cubic);
+}
+
+.modal-form-input:focus-within {
+  border-color: #2196f3;
+}
+
+.svg-modal-form {
+  position: absolute;
+  top: 65%;
+  left: 12px;
+  transform: translateY(-50%);
+
+  fill: #212121;
+  width: 18px;
+  height: 18px;
+
+  transition: fill 250ms var(--cubic);
+}
+
+.modal-form-field:focus-within > .svg-modal-form {
+  fill: #2196f3;
+}
+
+.modal-form-commentary {
+  min-width: 448px;
+  min-height: 120px;
+  margin: 4px 0px 0px 0px;
+  padding: 12px 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  font-size: 14px;
+  line-height: calc(16.41 / 14);
+  letter-spacing: 0.01em;
+  outline: none;
+
+  transition: border-color 250ms var(--cubic);
+}
+
+.modal-form-commentary:focus-within {
+  border-color: #2196f3;
+}
+
+.modal-form-field.commentary {
+  margin-bottom: 20px;
+}
+
+.modal-form-commentary::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-form-agreement {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14.06 / 12);
+  letter-spacing: 0.01em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+/* Скрытие стандартного чекбокса (для всех браузеров)*/
+.modal-form-input-agreement {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.svg-modal-form-agreement-yes {
+  fill: #ffffff;
+  width: 16px;
+  height: 15px;
+
+  margin-right: 7px;
+
+  border-radius: 1px;
+  border: 2px solid #212121;
+
+  transition: fill 250ms var(--cubic), border 250ms var(--cubic);
+}
+
+/* При клике на чекбоксе меняет иконку */
+.modal-form-input-agreement:checked + .svg-modal-form-agreement-yes {
+  fill: #2196f3;
+  border: none;
+}
+
+.modal-form-agreement-text {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  margin-right: 5px;
+}
+
+.modal-form-agreement-terms {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: #2196f3;
+  text-decoration-color: #2196f3;
+  text-decoration-line: underline;
+}
+
+.modal-form .button {
+  color: #ffffff;
+  background-color: #2196f3;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+
+  display: inline-block;
+  padding: 10px 32px;
+  margin: 0px 124px;
+  min-width: 200px;
+  text-align: center;
+
+  border: 0;
+  border-radius: 4px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: background-color 250ms var(--cubic);
+}
+
+.modal-form .button:hover,
+.modal-form .button:focus {
+  background-color: #188ce8;
+}
+
 /* work section */
 
 .section {
@@ -592,7 +774,7 @@ body {
 
 .text-btn {
   color: #212121;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   font-family: inherit;
   font-weight: 500;
 
@@ -627,7 +809,7 @@ body {
 .portfolio-img-list > .portfolio-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition: box-shadow 250ms var(--cubic);
+  transition: box-shadow 250ms var(--cubic);
 }
 
 /* calc ((100% - кол-во марджинов в строке * значение марджина ) / кол-во элементов в строке */
