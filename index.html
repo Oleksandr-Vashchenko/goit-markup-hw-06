@@ -352,7 +352,7 @@
             growth solutions.
           </p>
         </div>
-        <div class="Social media">
+        <div class="social-media">
           <h2 class="footer-suptitle">Social media</h2>
           <ul class="footer-list-icon">
             <li class="footer-item-icon">
@@ -385,6 +385,26 @@
             </li>
           </ul>
         </div>
+
+        <form class="footer-form">
+          <label class="footer-form-input-desc" for="footer-email">Subscribe</label>
+          <input
+            class="footer-form-input"
+            type="email"
+            id="footer-email"
+            placeholder="E-mail"
+            required
+            minlength="2"
+          />
+          <button class="footer-btn" type="submit">
+            Subscribe
+            <span class="footer-form-btn">
+              <svg class="footer-form-icon">
+                <use href="./images/icons.svg#frame"></use>
+              </svg>
+            </span>
+          </button>
+        </form>
       </div>
     </footer>
     <!--modal window-->
@@ -395,6 +415,100 @@
             <use href="./images/icons.svg#close-modal"></use>
           </svg>
         </button>
+        <!--modal form-->
+        <p class="modal-form-text">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <div class="modal-form-field">
+            <label class="modal-form-input-desc" for="user-name">Name</label>
+            <div class="input-wrap-icon">
+              <input
+                class="modal-form-input"
+                type="text"
+                name="user_name"
+                id="user-name"
+                autofocus
+                required
+                title="user name"
+                pattern="^[a-zA-Zа-я А-Я]+$"
+                minlength="2"
+                maxlength="20"
+              />
+              <svg class="modal-input-icon">
+                <use href="./images/icons.svg#person"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-form-field">
+            <label class="modal-form-input-desc" for="user-phone">phone</label>
+            <div class="input-wrap-icon">
+              <input
+                class="modal-form-input"
+                type="tel"
+                name="user_phone"
+                id="user-phone"
+                required
+                title="xxx-xxx-xx-xx"
+                pattern="^[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}"
+              />
+              <svg class="modal-input-icon">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-form-field">
+            <label class="modal-form-input-desc" for="user-email">phone</label>
+            <div class="input-wrap-icon">
+              <input
+                class="modal-form-input"
+                type="email"
+                id="user-email"
+                name="user_email"
+                required
+                title="test@mail.com"
+                minlength="2"
+              />
+              <svg class="modal-input-icon">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-form-textarea">
+            <label class="modal-form-input-desc" for="user-message">Comment</label>
+            <textarea
+              class="user-form-message"
+              name="user_message"
+              id="user-message"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <div class="modal-field-check-box">
+            <input
+              class="modal-check-box hidden-title"
+              type="checkbox"
+              name="user-policy"
+              id="user-policy"
+              value="true"
+              required
+            />
+            <label class="modal-check-box-desc" for="user-policy"
+              ><span class=""
+                ><svg class="modal-slose-btn-icon">
+                  <use href="./images/icons.svg#vector"></use>
+                </svg>
+              </span>
+              accept the terms and conditions of the&nbsp;
+              <a class="modal-user-policy-accent" href="">PrivacyPolicy</a></label
+            >
+          </div>
+
+          <button class="btn modal-form-submit" type="submit">
+            <span class="modal-form-submit-text">Send</span>
+          </button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
