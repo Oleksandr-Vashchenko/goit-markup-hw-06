@@ -423,7 +423,7 @@ body {
   height: 24px;
 }
 
-/*===============================================*/
+/*=======================footer-form========================*/
 .footer-form-input-desc {
   font-weight: 500;
   font-size: 16px;
@@ -437,12 +437,14 @@ body {
 }
 
 .footer-form-input {
+  width: 264px;
   height: 40px;
+
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.04em;
   color: var(--accent);
-
+  margin-right: 24px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -450,25 +452,35 @@ body {
   padding: 8px 16px;
   outline: none;
 }
+
 .footer-btn {
   height: 40px;
+  position: relative;
   color: var(--withe);
 
-  padding: 8px 24px;
+  padding: 8px 64px 8px 24px;
   background: var(--Primary-brand);
   border-radius: 4px;
   border: none;
+
   transition: background-color var(--transition-dur-and-func);
 }
 .footer-btn:hover,
 .footer-btn:focus {
   background-color: var(--Primary-brand-accent);
 }
+
+.footer-form-btn {
+  position: absolute;
+  right: 24px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .footer-form-icon {
   width: 24px;
   height: 20px;
   fill: var(--withe);
-  margin-left: 16px;
 }
 
 /*================///////////////////////////////======portfolio=========////////////////=================*/
@@ -665,7 +677,9 @@ body {
   width: 18px;
   height: 24px;
   position: absolute;
+  top: 50%;
   left: 19px;
+  transform: translateY(-50%);
   fill: var(--secondari-text-color);
 }
 .modal-form-input:hover + .modal-input-icon,
