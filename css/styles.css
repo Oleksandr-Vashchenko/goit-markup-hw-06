@@ -438,12 +438,10 @@ body {
 
 .footer-form-input {
   width: 264px;
-  height: 40px;
-
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.6;
   letter-spacing: 0.04em;
-  color: var(--accent);
+  color: rgba(255, 255, 255, 0.6);
   margin-right: 24px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -454,7 +452,10 @@ body {
 }
 
 .footer-btn {
-  height: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+
   position: relative;
   color: var(--withe);
 
@@ -662,7 +663,8 @@ body {
   line-height: 1.2px;
   letter-spacing: 0.04em;
 
-  padding-left: 42px;
+  padding: 12px 42px;
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   color: var(--secondari-text-color);
